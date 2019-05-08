@@ -1,0 +1,7 @@
+---
+- name: working on Nginx 
+  hosts: centos-t04
+  become: yes 
+  tasks:
+     - name: install ngixn 
+       yum: name=nginx state=latest
